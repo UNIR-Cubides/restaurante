@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: palegoldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background:blueviolet;
+    width: 100%;
+    clear: both;
+    content: '';
+    display:table;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 8px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 25px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: black;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+section{
+    background:white;
+    width: 100%;
+    clear: both;
+    content: '';
+    display:table;
+}
+
+.description{
+    width: 500px;
+    margin: 0 auto;
+}
+
+#titulo{
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#img-restaurante{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+}
+
+#text-description{
+    text-align: left;
+    padding: 20px;
+}
+
+#lista-servicios{
+    position: relative;
+    padding-left: 30px;
+}
